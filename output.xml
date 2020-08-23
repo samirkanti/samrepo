@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2 (Python 3.8.2 on win32)" generated="20200822 17:09:51.675" rpa="false">
+<suite id="s1" name="RobotProject1" source="C:\Selenium\workspace\RobotProject1">
+<suite id="s1-s1" name="Test" source="C:\Selenium\workspace\RobotProject1\Test">
+<suite id="s1-s1-s1" name="SanityTest2" source="C:\Selenium\workspace\RobotProject1\Test\SanityTest2.robot">
+<test id="s1-s1-s1-t1" name="SampleTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://opensource-demo.orangehrmlive.com/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200822 17:09:53.372" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200822 17:09:58.184" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20200822 17:09:58.184" endtime="20200822 17:09:58.184"></status>
+</kw>
+<msg timestamp="20200822 17:09:58.338" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 81
+</msg>
+<status status="FAIL" starttime="20200822 17:09:53.371" endtime="20200822 17:09:58.338"></status>
+</kw>
+<status status="FAIL" starttime="20200822 17:09:53.369" endtime="20200822 17:09:58.339" critical="yes">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 81
+</status>
+</test>
+<status status="FAIL" starttime="20200822 17:09:51.898" endtime="20200822 17:09:58.340"></status>
+</suite>
+<status status="FAIL" starttime="20200822 17:09:51.894" endtime="20200822 17:09:58.342"></status>
+</suite>
+<status status="FAIL" starttime="20200822 17:09:51.863" endtime="20200822 17:09:58.344"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="RobotProject1">RobotProject1</stat>
+<stat pass="0" fail="1" id="s1-s1" name="Test">RobotProject1.Test</stat>
+<stat pass="0" fail="1" id="s1-s1-s1" name="SanityTest2">RobotProject1.Test.SanityTest2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
